@@ -19,15 +19,15 @@ def like_summary(names)
   display_text = ""
 
   if names.length == 0
-      display_text = "no one likes this"
+    display_text = "no one likes this"
   elsif names.length == 1
-      display_text = "#{names[0]} likes this"
+    display_text = "#{names[0]} likes this"
   elsif names.length == 2
-      display_text = "#{names[0]} and #{names[1]} like this"
+    display_text = "#{names[0]} and #{names[1]} like this"
   elsif names.length == 3
-      display_text = "#{names[0]}, #{names[1]} and #{names[2]} like this"
+    display_text = "#{names[0]}, #{names[1]} and #{names[2]} like this"
   elsif names.length >= 4
-      display_text = "#{names[0]}, #{names[1]} and #{names.length - 2} others like this"
+    display_text = "#{names[0]}, #{names[1]} and #{names.length - 2} others like this"
   end
 end
 
