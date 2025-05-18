@@ -57,5 +57,8 @@ def test_like_summary(prompt, expected_result)
 end
 
 prompt_answers.each do |prompt_item|
-  test_like_summary(prompt_item[:names], prompt_item[:expected])
+  if test_like_summary(prompt_item[:names], prompt_item[:expected])
+  else
+    puts "Looks like it still needs some work..."
+  end
 end
